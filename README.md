@@ -17,23 +17,27 @@ Start new game (reset states)
 
 
 
-#Built with:
+## Built with:
 React JS
 Flexbox
 CSS
 HTML5 markup
 
-Quick start
+## Quick start
 Clone this repo, cd into it and run the following commands to install the dependencies:
 
+```
 $ yarn # npm install
 $ yarn build # npm run build
+``` 
 Development
 After installing all dependencies run Webpack in watch-mode to continually compile the JavaScript as you work:
 
+```
 $ yarn dev # npm run dev
+```
 
-#features to be added
+## features to be added
 
 die face
 login page 
