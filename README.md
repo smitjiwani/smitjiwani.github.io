@@ -18,10 +18,10 @@ Start new game (reset states)
 
 
 ## Built with:
-*React JS
-*Flexbox
-*CSS
-*HTML5 markup
+* React JS
+* Flexbox
+* CSS
+* HTML5 markup
 
 ## Quick start
 Clone this repo, cd into it and run the following commands to install the dependencies:
@@ -39,8 +39,8 @@ $ yarn dev # npm run dev
 
 ## features to be added
 
-*die face
-*login page 
-*dice animatiom
-*leaderboard
-*other variant of the game
+* die face
+* login page 
+* dice animatiom
+* leaderboard
+* other variant of the game
