@@ -31,7 +31,6 @@ function Header() {
                     <li>Projects</li>
                     <li>Skills</li>
                 </ul>
-
                 <ul className='right'>
                     <a href="https://www.linkedin.com/in/smit-jiwani-1aa62816b/"><li><LinkedInIcon className='icon' /></li></a>
                     <a href="https://github.com/smitjiwani"><li><GitHubIcon className='icon' /></li></a>

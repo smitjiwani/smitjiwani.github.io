@@ -1,8 +1,6 @@
 import React from 'react'
 import '../styles/ProjectCard.css'
 
-//create a card prop with a title, description, and image
-
 function ProjectCard(props) {
 
   return (

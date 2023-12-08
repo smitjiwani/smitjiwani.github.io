@@ -24,7 +24,7 @@ function Hero() {
     }, [])
 
     return (
-        <div className='hero'>
+        <div className='hero' id='hero'>
             <motion.div
                 initial={{ opacity: 0, marginLeft: -200 }}
                 whileInView={{ opacity: 1, marginLeft: 0 }}

@@ -6,7 +6,7 @@ import Porjects from './components/Projects'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
 import Three from './components/Three'
-import { Height } from '@mui/icons-material'
+
 
 function App() {
 
