@@ -4,6 +4,8 @@ import ProjectCard from './ProjectCard'
 import img from '../assets/smit.jpg'
 import { useState } from 'react';
 import { motion, useScroll } from "framer-motion"
+import chess from '../assets/chess.png'
+import mern from '../assets/mern.png'
 
 function Projects() {
 
@@ -20,7 +22,7 @@ function Projects() {
         <ProjectCard
             title='Mern Todo'
             description='This is a MERN Todo App made using ReactJS, Redux, NodeJS, ExpressJS, MongoDB, and more. It is a fully functional Todo App with authentication, posting, and more.'
-            image='https://github-production-user-asset-6210df.s3.amazonaws.com/78549024/268261074-67bbaff7-4344-4319-9a6e-491d0ae98653.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231208%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231208T114304Z&X-Amz-Expires=300&X-Amz-Signature=e4e7204ca1e07901c48c2b67b2ee67bf473c61bad1c665358b65cbdd45537753&X-Amz-SignedHeaders=host&actor_id=78549024&key_id=0&repo_id=692005346'
+            image={mern}
             link='https://github.com/smitjiwani/mern_todo'
         />,
         <ProjectCard
@@ -39,7 +41,7 @@ function Projects() {
             title='Chess-js'
             description='This is a chess game made using ReactJS, Redux, and more. It is a fully functional chess game with all the rules of chess implemented.'
             link='https://github.com/smitjiwani/js-chess'
-            image='https://private-user-images.githubusercontent.com/78549024/289059677-bb3d3b0c-3bdd-4de1-b2b9-b92938dad069.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDIwMzY4OTcsIm5iZiI6MTcwMjAzNjU5NywicGF0aCI6Ii83ODU0OTAyNC8yODkwNTk2NzctYmIzZDNiMGMtM2JkZC00ZGUxLWIyYjktYjkyOTM4ZGFkMDY5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjA4VDExNTYzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4YmFmZjc5OWFjMTkyYzY3ZGU0MTY3ZmNiMTk3NWE1YWE5ZWVkMmQ4MGZhMGNiZWI3ZjRmMGJlODE5MDY3MWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.E8zoKDIGjCBCfzphKaZ1mJQRfkAB95i-nkoQqqxECG8'
+            image={chess}
         />
     ];
 
