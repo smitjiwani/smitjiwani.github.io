@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Skills.css'
-import smit from '../assets/smit.jpg'
+
 
 
 function Skills() {

@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/Projects.css'
 import ProjectCard from './ProjectCard'
-import img from '../assets/smit.jpg'
 import { useState } from 'react';
 import { motion, useScroll } from "framer-motion"
 import chess from '../assets/chess.png'

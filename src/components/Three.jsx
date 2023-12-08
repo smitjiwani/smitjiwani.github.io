@@ -3,7 +3,6 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { useRef } from 'react';
 import { Box } from '@react-three/drei';
 import '../styles/Three.css'
-import { WireframeMaterialShaders } from '@react-three/drei/materials/WireframeMaterial';
 import { render } from 'react-dom';
 
 
