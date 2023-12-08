@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Skills.css'
-
+import { frame, motion } from 'framer-motion'
 
 
 function Skills() {
@@ -11,6 +11,14 @@ function Skills() {
         {/* create a collage of all skills */}
 
         <div className="skills__row">
+
+
+          <motion.div
+            initial={{ opacity: 0, padding: 500 }}
+            whileInView={{ opacity: 1, padding: 0 }}
+            transition={{ duration: 1 }}
+          >
+
 
           <img src='https://www.vectorlogo.zone/logos/graphql/graphql-ar21.svg' alt="smit" />
           <img src='https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg' alt="smit" />
@@ -38,6 +46,9 @@ function Skills() {
           <img src='https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg' alt="smit" />
           <img src='https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg' alt="smit" />
           <img src='https://www.vectorlogo.zone/logos/pugjs/pugjs-ar21.svg' alt="smit" />
+
+
+          </motion.div>
 
         </div>
       </div>

@@ -32,6 +32,12 @@
     background-color: var(--skills-second-color);
 }
 
+.skills__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 .skills img {
     max-width: 200px;
