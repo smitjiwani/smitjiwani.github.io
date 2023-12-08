@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useRef } from 'react';
 import { Box } from '@react-three/drei';
