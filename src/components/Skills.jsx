@@ -10,7 +10,7 @@ function Skills() {
       <div className='skills__container'>
         {/* create a collage of all skills */}
 
-        <div className="skills__row">
+        <div className="skills__row" id='skills'>
 
 
           <motion.div

@@ -5,6 +5,8 @@ import smit from '../assets/smit.jpg'
 import pdf from '../assets/smit.pdf'
 import { Code, Email, GitHub, LinkedIn } from '@mui/icons-material';
 import { motion, useScroll } from "framer-motion"
+import Skills from './Skills'
+import Projects from './Projects'
 
 function Hero() {
 
@@ -44,10 +46,10 @@ function Hero() {
                     <p>Embark on a journey through my digital realm! As a seasoned Full Stack Alchemist, I wield the powers of GraphQL and Docker, orchestrating a magical symphony of innovation and software architecture. Join me, and together, let's transform your tech aspirations into reality! </p>
                     <div className="hero__social">
                         <ul>
-                            <li><Code className='icons' /></li>
-                            <li><Email className='icons' /></li>
-                            <li><GitHub className='icons' /></li>
-                            <li><LinkedIn className='icons' /></li>
+                            <a href="https://codeforces.com/profile/smitttyy" target='_blank'><li><Code className='icons' /></li></a>
+                            <a href="mailto://smitjiwani44@gmail.com" target='_blank'></a><li><Email className='icons' /></li>
+                            <a href="https://github.com/smitjiwani/"></a><li><GitHub className='icons' /></li>
+                            <a href="http://https://www.linkedin.com/in/smit-jiwani-1aa62816b/" target="_blank" ></a><li><LinkedIn className='icons' /></li>
                         </ul>
                     </div>
                     <div className="hero__btn">
@@ -55,7 +57,11 @@ function Hero() {
                     </div>
                 </div>
             </motion.div>
+
+
         </div>
+
+
     )
 }
 

@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 130vh;
+    min-height: 130vh;
     background-color: var(--projects-color);
     padding: 0 20px;
 }

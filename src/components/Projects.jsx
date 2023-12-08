@@ -61,7 +61,7 @@ function Projects() {
     return (
 
 
-        <div className='Projects'>
+        <div className='Projects' id='projects'>
             <h1>Projects</h1>
             <motion.div
                 initial={{ opacity: 0, marginBottom: -300 }}

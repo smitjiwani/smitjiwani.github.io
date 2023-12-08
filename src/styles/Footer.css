@@ -1,10 +1,87 @@
+:root {
+    --anchor-color: var(--color3);
+}
 .footer {
-    background-color: var(--color1);
-    color: var(--color5);
-    padding: 20px;
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+        font-size: 11px;
+        font-weight: 150;
+        color: var(--color5);
+    }
+    
+    .footer a {
+        color: var(--anchor-color);
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        color: var(--color2);
+    }
+    
+    .footer_up {
+        padding: 0px 50px;
+        margin: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(40, 40, 40);
+    }
+    
+    .footer_left {
+        max-width: 300px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 1rem;
+        overflow: hidden;
+        text-align: left;
+    }
+    
+    .footer_left li {
+        margin-top: 0.23rem;
+        padding: 0.5rem 0.5rem;
+        text-align: left;
+        font-size: large;
+    }
+    
+    .footer_left li:hover {
+        background-color: var(--color2);
+        color: var(--color5);
+        border-radius: 5px;
+        }
+        
+        .footer_right {
+            list-style-type: none;
+            margin: 0;
+            padding: 1rem;
+            overflow: hidden;
+            text-align: right;
+        }
+        
+        .footer_right a {
+            margin: 0;
+            text-decoration: none;
+            color: var(--anchor-color);
+        }
+        
+        
+        .footer_right .icon {
+            font-size: large;
+        }
+        
+        .footer_right li {
+            margin: 0;
+            list-style: none;
+        }
+        
+        .footer h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        
+        .footer_down {
+            background-color: rgb(48, 50, 55);
+            padding: 1rem;
 }

@@ -5,6 +5,9 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import pdf from '../assets/smit.pdf'
+import { HashLink as Link } from 'react-router-hash-link';
+import { Code } from '@mui/icons-material';
 
 
 
@@ -27,15 +30,27 @@ function Header() {
             {/* create a header file with home, about, projects, skills,  blogs */}
             <nav className='navbar' >
                 <ul className='left'>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Skills</li>
+                    <Link to="/#hero" smooth>
+                        <li>
+                            Home
+                        </li>
+                    </Link>
+                    <Link to="/#projects" smooth>
+                        <li>
+                            Projects
+                        </li>
+                    </Link>
+                    <Link to="/#skills" smooth>
+                        <li>
+                            Skills
+                        </li>
+                    </Link>
                 </ul>
                 <ul className='right'>
-                    <a href="https://www.linkedin.com/in/smit-jiwani-1aa62816b/"><li><LinkedInIcon className='icon' /></li></a>
-                    <a href="https://github.com/smitjiwani"><li><GitHubIcon className='icon' /></li></a>
-                    <a href="mailto:smitjiwani44@gmail.com"><li><EmailIcon className='icon' /></li></a>
-                    <button>Resume</button>
+                    <a href="https://www.linkedin.com/in/smit-jiwani-1aa62816b/" target='_blank'><li><LinkedInIcon className='icon' /></li></a>
+                    <a href="https://github.com/smitjiwani" target='_blank'><li><GitHubIcon className='icon' /></li></a>
+                    <a href="https://codeforces.com/profile/smitttyy" target='_blank'><li><Code className='icon' /></li></a>
+                    <a href="mailto:smitjiwani44@gmail.com" target='_blank'><button>Contact Now!</button></a>
                 </ul>
             </nav>
 
