@@ -1,0 +1,8 @@
+.other_elements {
+    position: relative;
+    z-index: 1;
+}
+
+.APP {
+    margin-top: -100vh;
+}
