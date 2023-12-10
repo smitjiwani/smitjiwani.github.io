@@ -49,16 +49,27 @@ function Header() {
         }
     });
 
-
     const [nav, setNav] = useState(false);
 
+    // on any action if nav is true then set it to false and vice versa
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (scrollY > 1 && nav === true) {
+                setNav(false);
+            }
+        })
+
+    }, [window.scrollY, window.innerWidth]);
+
+    // chnage innerhtml of .triple dots everytime nav changes
 
     return (
         <div className={`Navbar ${show && "Navbar scrolling"}`}>
 
             {mobile &&
                 <div className="nav__button">
-                    <div className="triple__dots" onClick={() => setNav(!nav)}>|||</div>
+                    <div className="triple__dots" onClick={() => setNav(!nav)} >|||</div>
                 </div>
             }
 

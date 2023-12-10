@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Projects.css'
 import ProjectCard from './ProjectCard'
 import { useState } from 'react';
@@ -8,6 +8,7 @@ import mern from '../assets/mern.png'
 
 function Projects() {
 
+    const [mobile, setMobile] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(1);
 
 
@@ -56,11 +57,28 @@ function Projects() {
 
     // make cards move left or right on click
 
+    useEffect(() => {
+        if (window.innerWidth <= 1000) {
+            setMobile(true);
+        }
+        else {
+            setMobile(false);
+        }
+    }, []);
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth <= 1000) {
+            setMobile(true);
+        }
+        else {
+            setMobile(false);
+        }
+    });
+
+
 
 
     return (
-
-
         <div className='Projects' id='projects'>
             <h1>Projects</h1>
             <motion.div
@@ -70,17 +88,19 @@ function Projects() {
             >
                 <div className="container">
 
-
-
                     <button onClick={() => handleCardSwitch('left')} className='btn__left'>&lt;</button>
                     <div className="cards">
-
-
                         <div>{cards[(currentIndex - 1 + cards.length) % cards.length]}</div>
                         <div className='mid_card'>{cards[currentIndex]}</div>
                         <div>{cards[(currentIndex + 1) % cards.length]}</div>
 
                     </div>
+
+                    {mobile && <div className="mobile__card">
+
+                        <div className='mid_card'>{cards[currentIndex]}</div>
+
+                    </div>}
 
 
                     <button onClick={() => handleCardSwitch('right')} className='btn__right'>&gt;</button>

@@ -85,3 +85,28 @@
             background-color: rgb(48, 50, 55);
             padding: 1rem;
 }
+@media screen and (max-width: 768px) {
+    .footer_up {
+        padding: 0px 20px;
+    }
+
+    .footer_left {
+        text-align: left;
+    }
+
+    .footer_right {
+        text-align: left;
+    }
+
+    .footer h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer_left li {
+        font-size: medium;
+    }
+
+    .footer_right .icon {
+        font-size: medium;
+    }
+}

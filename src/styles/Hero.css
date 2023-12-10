@@ -17,7 +17,7 @@
     color: var(--hero-font-color);
     font-family: 'Space Mono', monospace !important;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 0rem 6rem;
@@ -109,4 +109,96 @@
 .changed {
     font-size: larger;
     font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    .hero {
+        padding: 0rem 2rem;
+        overflow: hidden;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero__img {
+        padding: 0;
+    }
+
+    .hero__img img {
+        width: 300px;
+        height: 300px;
+        border-radius: 25px 25px 25px 25px;
+        object-fit: cover;
+    }
+
+    .hero__text {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        overflow: hidden;
+        background-color: transparent;
+        max-width: 50rem;
+        background-color: var(--hero-second-color);
+        border-radius: 25px 25px 25px 25px;
+        min-height: 400px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero__header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero__social ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+        display: flex;
+    }
+
+    .hero__social li {
+        margin-top: 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .hero__social li:hover {
+        background-color: var(--hero-font-color);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .icons {
+        font-size: large;
+    }
+
+    .hero__text button {
+        margin: 1rem 1rem 1rem 0rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--hero-second-color);
+        color: var(--hero-font-color);
+        font-size: large;
+        font-family: 'Space Mono', monospace !important;
+        cursor: pointer;
+        border: 2px solid var(--hero-font-color);
+    }
+
+    .hero__text button:hover {
+        background-color: var(--hero-font-color);
+        color: white;
+        border: 2px solid var(--hero-font-color);
+    }
+
+    .changed {
+        font-size: larger;
+        font-weight: bold;
+    }
+
 }

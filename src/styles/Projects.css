@@ -35,7 +35,6 @@
 .container {
     display: flex;
     height: 100vh;
-
 }
 
 .btn__left {
@@ -70,4 +69,26 @@
     display: flex;
     transition: transform 0.5s ease;
     /* Add transition for smooth animation */
+}
+/* add code for mobile max-width 768 */
+
+@media screen and (max-width: 1000px) {
+    .Projects {
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .cards {
+        display: none;
+    }
+
+
+    .mobile__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        margin: 0 -2rem;
+    }
 }
